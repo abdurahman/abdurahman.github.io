@@ -1,8 +1,10 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
 import data from "../yourdata"
-import PDFResumeReader from "./PDFResumeReader"
-import PDFCoverLetterReader from "./PDFCoverLetterReader";
+import loadable from '@loadable/component';
+
+const PDFResumeReader = loadable(() => import('./PDFResumeReader'))
+const PDFCoverLetterReader = loadable(() => import('./PDFCoverLetterReader'))
 
 const Info = () => {
   return (
