@@ -1,5 +1,5 @@
 {
-  "name": "Abdurahman_A_W21Portfolio",
+  "name": "abdurahman.github.io",
   "private": true,
   "description": "Portfolio used for finding a job and to list skills and achievements",
   "version": "0.1.0",
@@ -36,6 +36,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build && gh-pages -d public -b main",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
